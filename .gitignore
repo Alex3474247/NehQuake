@@ -1,0 +1,9 @@
+debug/
+release/
+libxmp_old/
+zlib_old/
+WinQuake.dsp
+nehahra.dsw
+nehahra.opt
+nehahra.plg
+nehahra.ncb

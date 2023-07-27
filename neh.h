@@ -1,5 +1,5 @@
 //#include "fmod/fmod.h"
-#include "libxmp/xmp.h"
+#include "libxmp/include/xmp.h"
 
 #define NEH_VERSION        3.08
 

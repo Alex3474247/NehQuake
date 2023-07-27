@@ -53,7 +53,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /machine:I386
-# ADD LINK32 dxguid.lib libxmp/libxmp.lib SDL2/lib/x86/SDL2.lib SDL2/lib/x86/SDL2main.lib zlib.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /map /machine:I386 /out:"Release/NehQuake_libxmp.exe" /libpath:"dxsdk\sdk\lib" /libpath:"libxmp" /libpath:"zlib" /opt:nowin98
+# ADD LINK32 dxguid.lib libxmp/build/release/libxmp.lib SDL2/lib/x86/SDL2.lib SDL2/lib/x86/SDL2main.lib zlib/build/release/zlib.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /map /machine:I386 /out:"Release/NehQuake_libxmp.exe" /libpath:"dxsdk\sdk\lib" /libpath:"zlib" /opt:nowin98
 # SUBTRACT LINK32 /pdb:none
 
 !ELSEIF  "$(CFG)" == "nehahra - Win32 Debug"
@@ -80,7 +80,7 @@ BSC32=bscmake.exe
 # ADD BSC32 /nologo
 LINK32=link.exe
 # ADD BASE LINK32 kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 /pdbtype:sept
-# ADD LINK32 dxguid.lib libxmp/libxmp.lib SDL2/lib/x86/SDL2.lib SDL2/lib/x86/SDL2main.lib zlib.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 /nodefaultlib:"LIBC" /out:"Debug/NehQuake_debug_libxmp.exe" /pdbtype:sept /libpath:"dxsdk\sdk\lib" /libpath:"libxmp" /libpath:"zlib"
+# ADD LINK32 dxguid.lib libxmp/build/debug/libxmp.lib SDL2/lib/x86/SDL2.lib SDL2/lib/x86/SDL2main.lib zlib/build/debug/zlibd.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib ole32.lib oleaut32.lib uuid.lib odbc32.lib odbccp32.lib /nologo /subsystem:windows /debug /machine:I386 /nodefaultlib:"LIBC" /out:"Debug/NehQuake_debug_libxmp.exe" /pdbtype:sept /libpath:"dxsdk\sdk\lib" /libpath:"libxmp" /libpath:"zlib"
 
 !ENDIF 
 

@@ -1,0 +1,6 @@
+[submodule "zlib"]
+	path = zlib
+	url = https://github.com/madler/zlib.git
+[submodule "libxmp"]
+	path = libxmp
+	url = https://github.com/libxmp/libxmp.git

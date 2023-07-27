@@ -5,9 +5,12 @@ I also changed the protocol number to be different to Bengt's protocol so that H
 Also changed max_savegames to 48.
 All of the modified code is signed with my nickname.
 
-SDL and libxmp headers and libraries are imported from the latest Quakespasm engine.
-All needed files are included in this archive to compile the engine without problems.
-
 Credits: Ender, the primary Nehahra engine developer (for 2.54 source), and Bengt Jardrup (for 3.08 source which I have used and updated).
 And this page - how to use libxmp api: http://xmp.sourceforge.net/libxmp.html#sdl-example 
-In 2023, July 26 I have moved from SDL 1.2 to SDL 2.0 because there was no music in the game.
+
+In 2023, July 26 I have moved from SDL 1.2 to SDL 2.0 because there was no music in the game in Windows 10 64bit system.
+zlib zconf.h file will appear when it builds with CMake in the "build" folder.
+No SDL2 submodule because the latest version of SDL2 on Github contains errors when compiling in Visual C++ 6.0
+Uses: zlib, SDL2+libxmp to play tracker music and directx 7 sdk libraries and headers for sound effects and video.
+Now the libxmp and zlib are submodules because they are suitable for an ancient Visual C++ 6.0, except SDL and directx 7 sdk libraries and headers (see vid_win.c source file).
+libxmp and zlib needs to be compiled from source code because the dsp project is set up to build dirs Debug/Release, then the source should compile.
