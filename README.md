@@ -17,5 +17,5 @@ No SDL2 submodule because the latest version of SDL2 on Github contains errors w
 You should compile it in Visual C++ 6.0, this engine is lightweight, with a relatively small amount of code compared to modern engines, for example Darkplaces and it supports
 ALL the features that was in the latest Nehahra release including dynamic music.
 Uses: zlib, SDL2+libxmp to play tracker music and directx 7 sdk libraries and headers for sound effects and video.
-Now the libxmp and zlib are submodules because they are suitable for an ancient Visual C++ 6.0, except SDL and directx 7 sdk libraries and headers (see vid_win.c source file).
+Now the libxmp and zlib are submodules because they are suitable for an ancient Visual C++ 6.0, except SDL2 and directx 7 sdk libraries and headers (see vid_win.c source file). I'm using SDL 2.0.8 headers and libs, not the latest version from github.
 libxmp and zlib needs to be compiled from source code because the dsp project is set up to build dirs Debug/Release, then the source should compile.
