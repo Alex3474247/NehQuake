@@ -1,7 +1,7 @@
 # NehQuake
 Nehahra engine 3.08 that is meaned to play Nehahra partial conversion for Quake.
 
-I cut off the FMOD dependency out of Nehahra 3.08 source and replace it with something modern, for example libxmp, but libxmp doesn't play the modules itself, only via the SDL.
+I cut off the FMOD dependency out of Nehahra 3.08 source and replaced it with something modern, for example libxmp, but libxmp doesn't play the modules itself, only via the SDL.
 And now Nehahra source is fully GPL compatible (libxmp is free and the SDL too).
 I have stopped at libxmp >= 4.5 (to decode Nehahra .xm and .s3m music to PCM data) and SDL2 libraries (SDL2 is for playing the PCM data directly).
 I also changed the protocol number to be different to Bengt's protocol so that HUD can display values more than 255 (up to 999, as in Darkplaces), this is taken from FitzQuake.
