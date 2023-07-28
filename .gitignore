@@ -2,6 +2,7 @@ debug/
 release/
 libxmp_old/
 zlib_old/
+.vs/
 WinQuake.dsp
 nehahra.dsw
 nehahra.opt
