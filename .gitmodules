@@ -4,3 +4,6 @@
 [submodule "libxmp"]
 	path = libxmp
 	url = https://github.com/libxmp/libxmp.git
+[submodule "SDL2"]
+	path = SDL2
+	url = https://github.com/MARSHMALLLOW/SDL2-2.0.8.git
