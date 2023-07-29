@@ -54,6 +54,12 @@
     <CodeAnalysisRules Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
     <CodeAnalysisRuleAssemblies Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" />
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <TargetName>$(ProjectName)_debug</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
   <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
     <Midl>
       <PreprocessorDefinitions>NDEBUG;%(PreprocessorDefinitions)</PreprocessorDefinitions>
@@ -85,7 +91,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>dxguid.lib;libxmp/build/release/libxmp.lib;SDL2/build/release/SDL2.lib;SDL2/build/release/SDL2main.lib;zlib/build/release/zlib.lib;comctl32.lib;winmm.lib;wsock32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>Release/NehQuake_libxmp.exe</OutputFile>
+      <OutputFile>Release/$(ProjectName).exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>dxsdk/lib/x86;zlib;libxmp;SDL2/build/Release;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <ProgramDatabaseFile>.\Release/NehQuake_libxmp.pdb</ProgramDatabaseFile>
@@ -134,7 +140,7 @@
     </ResourceCompile>
     <Link>
       <AdditionalDependencies>dxguid.lib;libxmp/build/debug/libxmp.lib;SDL2/build/debug/SDL2d.lib;SDL2/build/debug/SDL2maind.lib;zlib/build/debug/zlibd.lib;comctl32.lib;winmm.lib;wsock32.lib;opengl32.lib;odbc32.lib;odbccp32.lib;%(AdditionalDependencies)</AdditionalDependencies>
-      <OutputFile>Debug/NehQuake_debug_libxmp.exe</OutputFile>
+      <OutputFile>Debug/$(ProjectName)_debug.exe</OutputFile>
       <SuppressStartupBanner>true</SuppressStartupBanner>
       <AdditionalLibraryDirectories>libxmp;zlib;dxsdk/lib/x86;SDL2/build/Debug;%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
       <IgnoreSpecificDefaultLibraries>LIBC;%(IgnoreSpecificDefaultLibraries)</IgnoreSpecificDefaultLibraries>
