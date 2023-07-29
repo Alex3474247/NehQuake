@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="windows-1251"?>
 <VisualStudioProject
 	ProjectType="Visual C++"
-	Version="8,00"
+	Version="9,00"
 	Name="nehahra"
 	ProjectGUID="{6A56549C-00AE-4320-BF25-E3DB6970345F}"
+	TargetFrameworkVersion="131072"
 	>
 	<Platforms>
 		<Platform
@@ -48,7 +49,7 @@
 				Name="VCCLCompilerTool"
 				Optimization="2"
 				InlineFunctionExpansion="1"
-				AdditionalIncludeDirectories="SDL2/include,dx7sdk/include,libxmp/include"
+				AdditionalIncludeDirectories="libxmp/include,zlib,dxsdk/include,SDL2/include"
 				PreprocessorDefinitions="NDEBUG;WIN32;_WINDOWS;GLQUAKE"
 				StringPooling="true"
 				RuntimeLibrary="0"
@@ -73,16 +74,18 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dxsdk/lib/x86/dxguid.lib libxmp/build/release/libxmp.lib SDL2/build/release/SDL2.lib SDL2/build/release/SDL2main.lib zlib/build/release/zlib.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib odbc32.lib odbccp32.lib"
+				AdditionalDependencies="dxguid.lib libxmp/build/release/libxmp.lib SDL2/build/release/SDL2.lib SDL2/build/release/SDL2main.lib zlib/build/release/zlib.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib odbc32.lib odbccp32.lib"
 				OutputFile="Release/NehQuake_libxmp.exe"
 				LinkIncremental="1"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="dxsdk\lib,zlib,libxmp,SDL2"
+				AdditionalLibraryDirectories="dxsdk/lib/x86,zlib,libxmp,SDL2/build/Release"
 				ProgramDatabaseFile=".\Release/NehQuake_libxmp.pdb"
 				GenerateMapFile="true"
 				MapFileName=".\Release/NehQuake_libxmp.map"
 				SubSystem="2"
 				OptimizeForWindows98="1"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -104,9 +107,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"
@@ -146,7 +146,7 @@
 			<Tool
 				Name="VCCLCompilerTool"
 				Optimization="0"
-				AdditionalIncludeDirectories="zlib;SDL2/include;dxsdk/include,libxmp/include"
+				AdditionalIncludeDirectories="libxmp/include;zlib;dxsdk/include;SDL2/include"
 				PreprocessorDefinitions="_DEBUG;WIN32;_WINDOWS;GLQUAKE"
 				MinimalRebuild="true"
 				BasicRuntimeChecks="3"
@@ -172,15 +172,17 @@
 			/>
 			<Tool
 				Name="VCLinkerTool"
-				AdditionalDependencies="dxsdk/lib/x86/dxguid.lib libxmp/build/debug/libxmp.lib SDL2/build/debug/SDL2d.lib SDL2/build/debug/SDL2maind.lib zlib/build/debug/zlibd.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib odbc32.lib odbccp32.lib"
+				AdditionalDependencies="dxguid.lib libxmp/build/debug/libxmp.lib SDL2/build/debug/SDL2d.lib SDL2/build/debug/SDL2maind.lib zlib/build/debug/zlibd.lib comctl32.lib winmm.lib wsock32.lib opengl32.lib odbc32.lib odbccp32.lib"
 				OutputFile="Debug/NehQuake_debug_libxmp.exe"
 				LinkIncremental="2"
 				SuppressStartupBanner="true"
-				AdditionalLibraryDirectories="libxmp,zlib,SDL2,dxsdk"
+				AdditionalLibraryDirectories="libxmp,zlib,dxsdk/lib/x86,SDL2/build/Debug"
 				IgnoreDefaultLibraryNames="LIBC"
 				GenerateDebugInformation="true"
 				ProgramDatabaseFile=".\Debug/NehQuake_debug_libxmp.pdb"
 				SubSystem="2"
+				RandomizedBaseAddress="1"
+				DataExecutionPrevention="0"
 				TargetMachine="1"
 			/>
 			<Tool
@@ -202,9 +204,6 @@
 			/>
 			<Tool
 				Name="VCAppVerifierTool"
-			/>
-			<Tool
-				Name="VCWebDeploymentTool"
 			/>
 			<Tool
 				Name="VCPostBuildEventTool"

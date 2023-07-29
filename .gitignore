@@ -3,6 +3,15 @@ release/
 libxmp_old/
 zlib_old/
 .vs/
+*.db
+*.opendb
+*.old
+*.suo
+*.sdf
+*.filters
+*.user
+*.xml
+_UpgradeReport_Files/
 nehahra.vcproj.WIN-S003LD0JRJG.User.user
 nehahra.suo
 WinQuake.dsp
