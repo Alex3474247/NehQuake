@@ -4,8 +4,8 @@
 //FMOD removed from the Nehahra | AlexQuaker
 //#include "fmod/fmod.h"
 //#include "fmod/fmod_errors.hg"
-#include "SDL2/include/SDL.h"
-#include "libxmp/include/xmp.h"
+#include <SDL.h>
+#include <xmp.h>
 
 #if ((XMP_VERCODE+0) < 0x040200)
 #error libxmp version 4.2 or newer is required

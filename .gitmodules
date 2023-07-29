@@ -7,3 +7,6 @@
 [submodule "SDL2"]
 	path = SDL2
 	url = https://github.com/MARSHMALLLOW/SDL2-2.0.8.git
+[submodule "DXSDK"]
+	path = DXSDK
+	url = https://github.com/ReactiioN1337/DirectX-SDK.git
