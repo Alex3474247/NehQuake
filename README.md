@@ -1,5 +1,5 @@
 # NehQuake
-Nehahra engine 3.08 that is meaned to play Nehahra partial conversion for Quake.
+Nehahra engine 3.08 that is meant to play Nehahra partial conversion for Quake.
 
 I cut off the FMOD dependency out of Nehahra 3.08 source and replaced it with something modern, for example libxmp, but libxmp doesn't play the modules itself, only via the SDL.
 And now Nehahra source is fully GPL compatible (libxmp is free and the SDL too).
