@@ -14,5 +14,5 @@ And this page - how to use libxmp api with SDL: http://xmp.sourceforge.net/libxm
 In 2023, July 26 I moved from SDL 1.2 to SDL 2.0 because there was no music in the game on the Windows 10 64bit system.
 zlib zconf.h file will appear when it builds with CMake in the "build" folder.
 You should compile it in Visual Studio 2019 (I use a free Community edition), this engine is lightweight, with a relatively small amount of code compared to modern engines, for example Darkplaces and it supports ALL the features that were in the latest Nehahra release including dynamic music triggered by the QuakeC (progs.dat) commands "playmod" and "stopmod".
-Uses: zlib, SDL2+libxmp to play tracker music and directx 7 sdk libraries and headers for input, sound effects and video.
+Uses: zlib, SDL2+libxmp to play tracker music and DirectX sdk libraries and headers for input, sound effects and video.
 libxmp, zlib and SDL2 needs to be compiled from source code because the VS project is set up to build dirs Debug/Release, then the source should compile.
