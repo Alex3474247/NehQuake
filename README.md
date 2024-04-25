@@ -8,7 +8,7 @@ I also changed the protocol number to be different to Bengt's protocol so that H
 Also changed max_savegames to 48.
 All of the modified code is signed with my nickname.
 
-Credits: Ender, the primary Nehahra engine developer (for 2.54 source), and Bengt Jardrup (for 3.08 source which I have used and updated).
+Credits: Ender, the primary Nehahra engine developer (for 2.54 source), and Bengt Jardrup (for 3.08 source which I have used and updated) from here: http://user.tninet.se/~xir870k/nehquakebjp.zip.
 And this page - how to use libxmp api with SDL: http://xmp.sourceforge.net/libxmp.html#sdl-example 
 
 In 2023, July 26 I moved from SDL 1.2 to SDL 2.0 because there was no music in the game on the Windows 10 64bit system.
