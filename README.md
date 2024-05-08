@@ -16,4 +16,5 @@ zlib zconf.h file will appear when it builds with CMake in the "build" folder.
 You should compile it in Visual Studio 2019 (I use a free Community edition), this engine is lightweight, with a relatively small amount of code compared to modern engines, for example Darkplaces and it supports ALL the features that were in the latest Nehahra release including dynamic music triggered by the QuakeC (progs.dat) commands "playmod" and "stopmod".
 Uses: zlib, SDL2+libxmp to play tracker music and DirectX sdk libraries and headers for input, sound effects and video.
 libxmp, zlib and SDL2 needs to be compiled from source code because the VS project is set up to build dirs Debug/Release, then the source should compile.
+
 Note: this source code is only for Windows, no makefiles for Android or Linux, I don't have enough time to implement them.
